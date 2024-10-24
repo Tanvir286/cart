@@ -196,7 +196,7 @@ const Search = () => {
         {/* New Search Button */}
         <div className="text-center mt-5">
             <button 
-                onClick={() => window.location.reload()} 
+                
                 className="bg-green-500 text-white px-4 py-2 rounded"
             >
                 New Search
