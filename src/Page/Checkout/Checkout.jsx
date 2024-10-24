@@ -4,6 +4,7 @@ import { RiDeleteBin5Line } from "react-icons/ri";
 import { Link ,useNavigate} from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { activeValue } from '../../store/reducers/local';
+import { clearCart } from '../../store/reducers/chart';
 import axios from 'axios'; 
 
 import { ToastContainer, toast } from 'react-toastify'; 
@@ -92,6 +93,7 @@ const Checkout = () => {
             }));
 
             setTimeout(() => {
+                dispatch(clearCart());
                 navigate('/order-details');
             }, 3000);
 
